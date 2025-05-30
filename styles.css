@@ -160,12 +160,12 @@ main .track-section .track-card-container img{
     height: 250px;
     object-fit: cover;
     border-radius: 50%;
-    animation: img-rotate 4s infinite linear;
+    /* animation: img-rotate 4s infinite linear; */
 }
-@keyframes img-rotate {
+/* @keyframes img-rotate {
     0%,100%{ rotate: 0deg; opacity: 0.1;}
     50%{ rotate: 360000deg; opacity: 1;}
-}
+} */
 
 main .track-section .track-card-container h3{
     font-weight: bold;
