@@ -6,7 +6,8 @@
 
 body{
     background: linear-gradient(to right, rgba(255, 255, 255, 0.571), black);
-    min-width: 100vh;
+    min-height: 100vh;
+    
 }
 
 .container{
@@ -16,7 +17,7 @@ body{
 }
 
 header{
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.13);
     padding: 20px 0;
 }
 
@@ -34,7 +35,7 @@ header .container .logo {
 
 header .container .logo i{
     font-size: 25px;
-    background: linear-gradient(45deg, #7877c6, #78dbff, #ff77c6, #c677ff);
+    background: linear-gradient(175deg, rgb(171, 171, 255), rgba(0, 0, 0, 0.806));
     background-clip: text;
     color: transparent;
 }
@@ -42,7 +43,7 @@ header .container .logo i{
 header .container .logo h1{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 900;
-    background: linear-gradient(45deg, #7877c6, #78dbff, #ff77c6, #c677ff);
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.838), rgb(185, 185, 255), rgb(199, 199, 199), rgb(0, 0, 0));
     background-clip: text;
     color: transparent;
     text-shadow: 0 0 30px rgba(120, 119, 198, 0.5);
@@ -159,13 +160,14 @@ main .track-section .track-card-container img{
     width: 100%;
     height: 250px;
     object-fit: cover;
-    border-radius: 50%;
-    /* animation: img-rotate 4s infinite linear; */
+    border-radius: 25%;
+    box-shadow: rgb(16, 25, 34) 0px 20px 30px -10px;
+    transition: all 0.3s ease;
 }
-/* @keyframes img-rotate {
-    0%,100%{ rotate: 0deg; opacity: 0.1;}
-    50%{ rotate: 360000deg; opacity: 1;}
-} */
+
+main .track-section .track-card-container img:hover {
+    border-radius: 50%;
+}
 
 main .track-section .track-card-container h3{
     font-weight: bold;
