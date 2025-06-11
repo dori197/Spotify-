@@ -7,7 +7,6 @@
 body{
     background: linear-gradient(to right, rgba(255, 255, 255, 0.571), black);
     min-height: 100vh;
-    
 }
 
 .container{
@@ -75,14 +74,18 @@ main .search-container {
     border-radius: 10px;
     position: relative;
     transition: all 0.3s ease;
+    overflow: hidden;
 }
 
 main .search-container:focus-within {
     transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(147, 147, 184, 0.5), 0 8px 32px rgba(0, 0, 0, 0.3);
+    padding: 0;
+    border-radius: 100px;
 }
 main .search-container:focus-within input {
     border: 2px solid rgb(255, 245, 230);
-    box-shadow: 0 0 30px rgba(120, 119, 198, 0.5), 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease; 
 }
 
 
@@ -176,4 +179,32 @@ main .track-section .track-card-container h3{
 
 main .track-section .track-card-container p {
     opacity: 0.7;
+}
+
+
+.modals {
+    position: fixed;   
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 400px;
+    background: rgba(27, 27, 27, 0.902);
+    z-index: 100000;
+    padding: 50px;
+    border-radius: 20px;
+    display: none;
+    align-items: center;
+}
+
+.modals-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.modals-header i {
+    font-size: 30px;
+    cursor: pointer;
 }

@@ -76,7 +76,17 @@
 
     </div>
   </main>
-
+  <div class="modals" id="modals">
+    <div class="modals-header">
+      <h2 id="modals-name">Song</h2>
+      <i onclick="handleClose()" class="fa-solid fa-close"></i>
+    </div>
+    <iframe id="iframe" title="Spotify Embed: Recommendation Playlist "
+      src="https://open.spotify.com/embed/track/4ys3y9djWZurOdyouMlcBG?utm_source=generator&theme=0" width="100%"
+      height="100%" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy">
+    </iframe>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.21.2/dist/sweetalert2.all.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.9.0/axios.min.js"
