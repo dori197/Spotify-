@@ -204,10 +204,10 @@ main .track-section .track-card-container p {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 50%;
-    height: 400px;
+    height: 500px;
     background: rgba(27, 27, 27, 0.902);
     z-index: 100000;
-    padding: 50px;
+    padding: 20px;
     border-radius: 20px;
     display: none;
     align-items: center;
@@ -215,16 +215,47 @@ main .track-section .track-card-container p {
 
 .modals-header {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
     color: white;
+    gap: 10px;
+    padding: 5px 10px 0px 10px;
 }
 
 .modals-header i {
+    width: 35px;
+    height: 35px;
     font-size: 30px;
     cursor: pointer;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.modals-header i:hover {
+    transform: scale(1.2);
+    background: linear-gradient(to right, rgba(116, 116, 116, 0.842), rgba(255, 255, 255, 0.943));
+    background-clip: text;
+    color: transparent;
+}
+
+.modals-header i:active {
+    transform: scale(1);
+    transition: all 0.2s;
+}
+
+.modals-header .modals-text {
+    display: flex;
+    align-self: start;
+}
+
+.modals-header .modals-text h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
 
 
 @media (max-width: 430px) {
