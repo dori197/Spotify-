@@ -242,7 +242,7 @@ main .track-section .track-card-container p {
 }
 
 .modals-header i:active {
-    transform: scale(1);
+    transform: scale(0.9);
     transition: all 0.2s;
 }
 
@@ -257,6 +257,24 @@ main .track-section .track-card-container p {
     font-size: 40px;
 }
 
+/* hr */
+.cus-hr{
+    width: 30%;
+    justify-self: center;
+    border: 1px solid white;
+}
+
+/* footer */
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:30%;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 15px;
+    white-space: nowrap;
+}
 
 @media (max-width: 430px) {
     main .track-section .track-card {
